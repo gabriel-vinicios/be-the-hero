@@ -10,7 +10,7 @@ module.exports = {
     },
 
     async create(request, response){
-        const { name, email, whatsapp, city, uf } = request.body;
+        const { name, email, whatsapp, city, fu } = request.body;
 
         const id = crypto.randomBytes(4).toString('HEX');
        
@@ -21,7 +21,7 @@ module.exports = {
        email,
        whatsapp,
        city,
-       uf,
+       fu,
         })
 
         return response.json( {id} );

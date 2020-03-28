@@ -16,7 +16,7 @@ async index(request, response){
         'ongs.email', 
         'ongs.whatsapp', 
         'ongs.city',
-        'ongs.uf'
+        'ongs.fu'
     ])
 
 response.header('X-Total-Count', count['count(*)']);
